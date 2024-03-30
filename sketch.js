@@ -11,11 +11,11 @@ let raqueteComprimento = 10;
 let raqueteAltura = 90;
 
 //variáveis da raquete
-let xRaquete = 5;
+let xRaquete = 1;
 let yRaquete = 150;
 
 //variáveis do oponente
-let xRaqueteOponente = 585;
+let xRaqueteOponente = 589;
 let yRaqueteOponente = 150;
 let velocidadeYOponente;
 
@@ -29,7 +29,7 @@ let pontosDoPonente = 0
 //Sons DO Jogo
 let raquetada;
 let ponto;
-let trilha; 
+let trilha;
 
 
 
@@ -52,7 +52,7 @@ function draw() {
     verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);
     incluiPlacar()
     marcaPonto()
-   
+
 
 
 }
@@ -122,9 +122,9 @@ function incluiPlacar() {
     stroke(255);
     textAlign(CENTER)
     textSize(16);
-    fill(color(255, 140, 0)) 
-    rect(130, 10, 40,20)
-    rect(430, 10, 40,20)
+    fill(color(255, 140, 0))
+    rect(130, 10, 40, 20)
+    rect(430, 10, 40, 20)
     fill(255)
     text(meusPontos, 150, 26)
     text(pontosDoPonente, 450, 26)
@@ -141,9 +141,9 @@ function marcaPonto() {
     };
 }
 
-function preload(){
+function preload() {
     trilha = loadSound("/mp3/trilha.mp3");
-    ponto  = loadSound("/mp3/ponto.mp3");
-    raquetada  = loadSound("/mp3/raquetada.mp3");
+    ponto = loadSound("/mp3/ponto.mp3");
+    raquetada = loadSound("/mp3/raquetada.mp3");
 
 }
