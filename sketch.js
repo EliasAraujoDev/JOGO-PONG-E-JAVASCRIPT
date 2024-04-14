@@ -142,8 +142,8 @@ function marcaPonto() {
 }
 
 function preload() {
-    trilha = loadSound("/mp3/trilha.mp3");
-    ponto = loadSound("/mp3/ponto.mp3");
-    raquetada = loadSound("/mp3/raquetada.mp3");
+    trilha = loadSound("./mp3/trilha.mp3");
+    ponto = loadSound("./mp3/ponto.mp3");
+    raquetada = loadSound("./mp3/raquetada.mp3");
 
 }
